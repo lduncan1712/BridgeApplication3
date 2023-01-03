@@ -3,7 +3,7 @@
 
 An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy network 'edge' references , and Static Data) Into An SQL Database. (Using Google's SheetsAPI, and JDBC)
 
-![Visual: Phase 1,2,3](/repository/visuals/employee.png?raw=true "Employee Data title")
+![Visual: Phase 1,2,3](/BridgeApplication3/visuals/MatchedAutomatically.png?raw=true "3 Surveyees")
 
 This application, heavily emphasizing parallelism, breaks each surveyee into 3 phases, into an assembly lines of sorts, 
 
