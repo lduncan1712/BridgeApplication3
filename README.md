@@ -3,9 +3,12 @@
 
 An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy network 'edge' references , and Static Data) Into An SQL Database. (Using Google's SheetsAPI, and JDBC)
 
-![Visual: Phase 1,2,3](/BridgeApplication3/assets/MatchedAutomatically.png?raw=true "3 Surveyees")
+![Visual: Phase 1,2,3](/BridgeApplication3/visuals/simulatedStart.png?raw=true "3 Surveyees")
 
 This application, heavily emphasizing parallelism, breaks each surveyee into 3 phases, into an assembly lines of sorts, 
+allowing different components of 3 surveyees to be worked on at once (2 automatically)
+
+PHASE:
 
     -1) (FULLY AUTOMATIC)Using SheetsAPI, obtains next desired row, then formats the static information, and using a 
         scoring algorithm (A Stored Procedure Added To DB), matches the surveyee to a 'node' in the DB, then using the
