@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="1298.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lduncan1712.bridgeApplication.controllers.InnerSceneController">
+   <children>
+      <ListView fx:id="tier_lv" layoutX="22.0" layoutY="65.0" prefHeight="242.0" prefWidth="230.0" />
+      <Separator layoutX="-21.0" layoutY="-27.0" prefHeight="59.0" prefWidth="1300.0" />
+      <ListView fx:id="conn_lv" layoutX="282.0" layoutY="74.0" prefHeight="394.0" prefWidth="230.0" />
+      <ListView fx:id="search_lv" layoutX="886.0" layoutY="60.0" prefHeight="308.0" prefWidth="397.0" />
+      <TextField fx:id="conn_tf" layoutX="523.0" layoutY="80.0" prefHeight="79.0" prefWidth="297.0" />
+      <TextField fx:id="search_tf" layoutX="611.0" layoutY="181.0" prefHeight="80.0" prefWidth="276.0" />
+      <Separator layoutX="-7.0" layoutY="441.0" prefHeight="60.0" prefWidth="1300.0" />
+      <TextField fx:id="manual_search_tf" layoutX="1085.0" layoutY="375.0" />
+      <Label layoutX="988.0" layoutY="379.0" text="Search By Phrase" />
+      <Button fx:id="manual_search_b" layoutX="955.0" layoutY="416.0" mnemonicParsing="false" onAction="#search" text="Manual Search" />
+      <Label layoutX="528.0" layoutY="336.0" text="Match To &quot;Null Person&quot;" />
+      <Button fx:id="match_null_b" layoutX="553.0" layoutY="362.0" mnemonicParsing="false" onAction="#matchToNull" prefHeight="26.0" prefWidth="75.0" text="Match To Null Person" />
+      <Label layoutX="62.0" layoutY="352.0" text="Current Index Completion" />
+      <ProgressBar fx:id="tier_pb" layoutX="34.0" layoutY="328.0" prefWidth="200.0" progress="0.0" />
+      <Label layoutX="27.0" layoutY="45.0" text="Tier List" />
+      <Label layoutX="290.0" layoutY="50.0" text="Connection List (within Tier)" />
+      <CheckBox fx:id="automatic_cb" layoutX="1135.0" layoutY="411.0" mnemonicParsing="false" text="Automatic" />
+      <Label layoutX="1117.0" layoutY="432.0" text="(Toggle to alternate lists)" />
+      <Label layoutX="924.0" layoutY="441.0" text="(creates list matching phrase)" />
+      <Label layoutX="896.0" layoutY="37.0" text="Automatic/Manual Search Recomendations" />
+      <Label layoutX="649.0" layoutY="59.0" text="(user written)" />
+      <Label layoutX="719.0" layoutY="263.0" text="(matched)" />
+      <Label layoutX="74.0" layoutY="45.0" text="(proportional to relative weight)" />
+   </children>
+</AnchorPane>

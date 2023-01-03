@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lduncan1712.bridgeApplication.controllers.MainSceneController">
+   <children>
+      <BorderPane fx:id="main_bp" prefHeight="704.0" prefWidth="1301.0">
+         <top>
+            <BorderPane fx:id="upper_pane" prefHeight="138.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <left>
+                  <Pane prefHeight="138.0" prefWidth="434.0" BorderPane.alignment="CENTER" />
+               </left>
+               <center>
+                  <Pane prefHeight="138.0" prefWidth="434.0" BorderPane.alignment="CENTER" />
+               </center>
+               <right>
+                  <Pane prefHeight="138.0" prefWidth="434.0" BorderPane.alignment="CENTER" />
+               </right>
+               <top>
+                  <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </top>
+         <bottom>
+            <Pane prefHeight="88.0" prefWidth="1302.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="start_b" layoutX="8.0" layoutY="11.0" mnemonicParsing="false" onAction="#nextPhase" text="Next Phase (press to start) (R)" />
+                  <Button fx:id="end_b" layoutX="1202.0" layoutY="41.0" mnemonicParsing="false" onAction="#endSession_v" text="End Session" />
+                  <Label fx:id="ending_l" layoutX="14.0" layoutY="42.0" text="-" />
+                  <Label fx:id="end_row_l" layoutX="159.0" layoutY="39.0" text="-" />
+                  <Slider fx:id="match_threshold_s" layoutX="726.0" layoutY="47.0" max="101.0" minorTickCount="5" showTickLabels="true" showTickMarks="true" />
+                  <Label fx:id="match_threshold_label" layoutX="782.0" layoutY="15.0" text="Label" />
+                  <Label layoutX="713.0" layoutY="29.0" text="Set Automatic Match Threshold" />
+                  <Label fx:id="long_list_label" layoutX="990.0" layoutY="16.0" text="Label" />
+                  <Label layoutX="956.0" layoutY="15.0" text="LL" />
+                  <Slider fx:id="long_list_s" layoutX="892.0" layoutY="47.0" max="20.0" min="1.0" showTickLabels="true" showTickMarks="true" />
+                  <Slider fx:id="short_list_s" layoutX="1043.0" layoutY="47.0" max="20.0" min="1.0" showTickLabels="true" showTickMarks="true" />
+                  <Label layoutX="1094.0" layoutY="21.0" text="Sl" />
+                  <Label fx:id="short_list_label" layoutX="1134.0" layoutY="21.0" text="Label" />
+                  <Separator layoutX="-3.0" layoutY="-32.0" prefHeight="53.0" prefWidth="1304.0" />
+                  <Button fx:id="skipRow_bt" layoutX="551.0" layoutY="29.0" mnemonicParsing="false" onAction="#removeRow_v" text="SKIP ROW" />
+                  <Label layoutX="317.0" layoutY="13.0" text="AT START:" />
+                  <Label layoutX="296.0" layoutY="33.0" text="Finds last SheetRow completed and " />
+                  <Label layoutX="271.0" layoutY="54.0" text="Continues to next (start from first if none completed) " />
+                  <Label layoutX="540.0" layoutY="8.0" text="Skips row as invalid" />
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <Pane fx:id="central_pane" prefHeight="473.0" prefWidth="1300.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

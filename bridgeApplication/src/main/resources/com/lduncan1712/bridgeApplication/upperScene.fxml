@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lduncan1712.bridgeApplication.controllers.UpperSceneController">
+   <children>
+      <AnchorPane prefHeight="138.0" prefWidth="434.0">
+         <children>
+            <ProgressBar fx:id="upper_pb" layoutY="106.0" prefHeight="32.0" prefWidth="434.0" progress="0.0" />
+            <Label fx:id="upper_num" layoutX="17.0" layoutY="67.0" prefHeight="18.0" prefWidth="112.0" />
+            <Label fx:id="upper_wn" layoutX="188.0" layoutY="17.0" text="wN" />
+            <Label fx:id="upper_mn" layoutX="187.0" layoutY="58.0" text="mN" />
+            <Separator layoutX="-9.0" layoutY="1.0" orientation="VERTICAL" prefHeight="138.0" prefWidth="26.0" />
+            <Separator layoutX="403.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="138.0" prefWidth="58.0" />
+            <Label layoutX="17.0" layoutY="26.0" prefHeight="18.0" prefWidth="144.0" text="(Matched Id)   (Sheet Row)" />
+            <Label layoutX="294.0" layoutY="85.0" text="(Match)" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
