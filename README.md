@@ -6,8 +6,8 @@ An Application That Formats/Converts Responses To A Googe Forms Survey (containi
 ![matchedAutomatically.png](https://user-images.githubusercontent.com/113392258/210441418-d723a14b-33a8-4529-8c81-3167b273085b.png?)
 
 
-This application, heavily emphasizing parallelism, breaks each surveyee into 3 phases, into an assembly lines of sorts, 
-allowing different components of 3 surveyees to be worked on at once (2 automatically)
+This application, heavily emphasizing parallelism, breaks each surveyee into 3 phases and threads, into an assembly lines of sorts, 
+allowing different components of 3 surveyees to be worked on at once (2 automatically) by 3 unique threads
 
 PHASE:
 
