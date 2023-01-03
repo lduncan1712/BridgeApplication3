@@ -29,19 +29,19 @@ PHASE:
 
 
 REPLICATION/MODIFICATION:
-    For anyone interested in replicating this application (or whole project)
-    the process is quite straight forward,
+For anyone interested in replicating/modifying this application (or whole project)
+the process is quite straight forward if main structure kept intact
     
-    -This Project Requires Creating An OAuth Credential Token (required by SheetsAPI to access Sheet)
-    https://developers.google.com/workspace/guides/create-credentials
+-This Project Requires Creating An OAuth Credential Token (required by SheetsAPI to access Sheet)
+https://developers.google.com/workspace/guides/create-credentials
     
-    -You will need to create the database outlined in AAAAAAAAAAAAAAAAA
-    (with slight modifications to starting entries at fit your needs), ensuring you also
-    include the stored procedures (2)
+-You will need to create the database outlined in AAAAAAAAAAAAAAAAA
+(with slight modifications to starting entries to fit your needs), ensuring you also
+include the stored procedures (2)
     
-    -Update ConfigController.java file to select your DB connection, SheetId, Credential File Path, 
-    (an increase or decrease to static or edge columns in Spreadsheet/Form is also easily modified within aswell,
-    assuming no further deviation from core structure (SEE SSSSSSSSSSSSSSSSSS))
+-Update ConfigController.java file to select your DB connection, SheetId, Credential File Path, 
+(an increase or decrease to static or edge columns in Spreadsheet/Form is also easily modified within aswell,
+assuming no further deviation from core structure (SEE SSSSSSSSSSSSSSSSSS))
     
     
     
