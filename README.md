@@ -1,14 +1,17 @@
 # BridgeApplication3
 
 
-An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy 'node' references ('edges'), and Static Data) Into An SQL Database. (Using Google's SheetsAPI, and JDBC)
+An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy network 'edge' references , and Static Data) Into An SQL Database. (Using Google's SheetsAPI, and JDBC)
 
-This application, heavily emphasizing parallelism, breaks each surveyee into 3 portions, into an assembly lines of sorts, 
+![Visual: Phase 1,2,3](/repository/visuals/employee.png?raw=true "Employee Data title")
 
-    -1) (FULLY AUTOMATIC)Formats the static information, and using a scoring algorithm (A Stored Procedure Added To DB), 
-        matches the surveyee to a 'node' in the DB, then using the same algorithm, creates a short ranked list of probable 
-        DB 'node' matches for every edge (name referenced by surveyee), stored locally with emphahis on preventing duplicate 
-        storage of 'nodes' in DB, (additionally provides user the opportunity to skip row (to remove potentially invalid surveyees))
+This application, heavily emphasizing parallelism, breaks each surveyee into 3 phases, into an assembly lines of sorts, 
+
+    -1) (FULLY AUTOMATIC)Using SheetsAPI, obtains next desired row, then formats the static information, and using a 
+        scoring algorithm (A Stored Procedure Added To DB), matches the surveyee to a 'node' in the DB, then using the
+        same algorithm, creates a short ranked list of probable DB 'node' matches for every edge (name referenced by surveyee), 
+        stored locally with emphahis on preventing duplicate storage of 'nodes' in DB, (additionally provides user the opportunity 
+        to skip row (to remove potentially invalid surveyees))
     
     -2) (MOSTLY AUTOMATIC) Given the user's selected match threshhold, matches each edge to top probable 'node' match where above threshold, 
          otherwise, highlights to user where manual matching is required, efficiently presenting a list of top probable matches to be simply 
