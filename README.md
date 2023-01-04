@@ -42,6 +42,10 @@ include the stored procedures (2)
 -Update ConfigController.java file to select your DB connection, SheetId, Credential File Path, 
 (an increase or decrease to static or edge columns in Spreadsheet/Form is also easily modified within aswell,
 assuming no further deviation from core structure (SEE SSSSSSSSSSSSSSSSSS))
+
+
+ADDITIONAL FEATURES:
+-At start of application, to obtain desired first row to return, it finds last row number associated with a completed node in DB, to determine 'continuing point', allowing application to 'start where it left off' (allows user to start formatting responses before all are submitted)
     
     
     
