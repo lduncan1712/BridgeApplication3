@@ -17,15 +17,15 @@ public class ConfigController {
 
     //DATABASE CONFIGURATION
     public static final String DB_Driver = "com.mysql.cj.jdbc.Driver";
-    public static final String DB_Url = "jdbc:mysql://localhost:3306/impact_network";
-    public static final String DB_Username = "root";
-    public static final String DB_Password = "Punt@b1eP1pp1";
+    public static final String DB_Url = "jdbc:mysql://localhost:3306/impact_network"; //(my settings, feel free to change)
+    public static final String DB_Username = "____";
+    public static final String DB_Password = "____";
     
     
 
     //GOOGLE SHEETS CONFIGURATION
-    public static final String USID = "1M29zhrGzHkbDf7MxDfPiTZ-b-ur4uXa8oKTbQLSiKPQ";
-    public static final String CREDENTIALS_FILE_PATH = "/com/lduncan1712/bridgeApplication/MyCred.json";
+    public static final String USID = "__________-"; //(spreadsheet id)
+    public static final String CREDENTIALS_FILE_PATH = "_______";
     
     //Starting/Ending Range Of SpreadSheet read;
     public static final char SpreadSheetSR = 'B';
