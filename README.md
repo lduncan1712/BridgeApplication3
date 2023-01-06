@@ -1,7 +1,7 @@
 # BridgeApplication3
 
 
-An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy network 'edge' references , and Static Data) Into An Database. (Java, SQL, Google's SheetsAPI, and JDBC)
+An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy network 'edge' references , and Static Data) Into An Database. (Java, SQL, Google's SheetsAPI, JDBC, OAuth)
 
 ![matchedAutomatically.png](https://user-images.githubusercontent.com/113392258/210441418-d723a14b-33a8-4529-8c81-3167b273085b.png?)
 
