@@ -35,17 +35,21 @@ the process is quite straight forward if main structure kept intact
 -This Project Requires Creating An OAuth Credential Token (required by SheetsAPI to access Sheet)
 https://developers.google.com/workspace/guides/create-credentials
     
--You will need to create the database outlined in AAAAAAAAAAAAAAAAA
+-You will need to create the database outlined in [masterProject](https://github.com/lduncan1712/ImpactNetwork/blob/main/impact_network_(1)_CREATE_DB.sql)
 (with slight modifications to starting entries to fit your needs), ensuring you also
 include the stored procedures (2)
     
 -Update ConfigController.java file to select your DB connection, SheetId, Credential File Path, 
 (an increase or decrease to static or edge columns in Spreadsheet/Form is also easily modified within aswell,
-assuming no further deviation from core structure (SEE SSSSSSSSSSSSSSSSSS))
+assuming no further deviation from core structure (SEE [project](https://github.com/lduncan1712/ImpactNetwork)))
 
 
-ADDITIONAL FEATURES:
+### ADDITIONAL FEATURES:
 -At start of application, to obtain desired first row to return, it finds last row number associated with a completed node in DB, to determine 'continuing point', allowing application to 'start where it left off' (allows user to start formatting responses before all are submitted)
+
+### Set
+
+
     
     
     
