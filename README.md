@@ -1,7 +1,7 @@
 # BridgeApplication3
 
 
-An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy network 'edge' references , and Static Data) Into An SQL Database. (Using Google's SheetsAPI, and JDBC)
+An Application That Formats/Converts Responses To A Googe Forms Survey (containing messy network 'edge' references , and Static Data) Into An Database. (Java, SQL, Google's SheetsAPI, and JDBC)
 
 ![matchedAutomatically.png](https://user-images.githubusercontent.com/113392258/210441418-d723a14b-33a8-4529-8c81-3167b273085b.png?)
 
@@ -28,34 +28,21 @@ PHASE:
         
 
 
-REPLICATION/MODIFICATION:
+### REPLICATION/MODIFICATION:
 For anyone interested in replicating/modifying this application (or whole project)
 the process is quite straight forward if main structure kept intact
     
--This Project Requires Creating An OAuth Credential Token (required by SheetsAPI to access Sheet)
+#### This Project Requires Creating An OAuth Credential Token (required by SheetsAPI to access Sheet)
 https://developers.google.com/workspace/guides/create-credentials
     
--You will need to create the database outlined in [masterProject](https://github.com/lduncan1712/ImpactNetwork/blob/main/impact_network_(1)_CREATE_DB.sql)
+#### You will need to create the database outlined in [masterProject](https://github.com/lduncan1712/ImpactNetwork/blob/main/impact_network_(1)_CREATE_DB.sql)
 (with slight modifications to starting entries to fit your needs), ensuring you also
 include the stored procedures (2)
     
--Update ConfigController.java file to select your DB connection, SheetId, Credential File Path, 
+#### Update ConfigController.java file to select your DB connection, SheetId, Credential File Path, 
 (an increase or decrease to static or edge columns in Spreadsheet/Form is also easily modified within aswell,
 assuming no further deviation from core structure (SEE [project](https://github.com/lduncan1712/ImpactNetwork)))
 
 
 ### ADDITIONAL FEATURES:
 -At start of application, to obtain desired first row to return, it finds last row number associated with a completed node in DB, to determine 'continuing point', allowing application to 'start where it left off' (allows user to start formatting responses before all are submitted)
-
-### Set
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
